@@ -69,7 +69,15 @@ export function SecaoEstabelecimentos({ form }: SecaoEstabelecimentosProps) {
                     <ol className="text-sm text-muted-foreground space-y-2 list-decimal list-inside">
                       <li>Clique no botão abaixo para abrir o modelo de planilha do Google Sheets</li>
                       <li>Faça uma cópia da planilha (Arquivo → Fazer uma cópia)</li>
-                      <li>Preencha os dados das lojas na sua cópia</li>
+                      <li className="font-medium text-primary">
+                        📋 Crie dentro da planilha 3 páginas (abas) com os nomes:
+                        <ul className="ml-6 mt-1 space-y-1 list-disc">
+                          <li><strong>LOJAS</strong></li>
+                          <li><strong>GASTRONOMIA</strong></li>
+                          <li><strong>SERVIÇOS</strong></li>
+                        </ul>
+                      </li>
+                      <li>Preencha os dados dos estabelecimentos na página correspondente</li>
                       <li className="font-medium text-destructive">⚠️ NÃO altere os nomes das colunas da tabela</li>
                       <li>Após preencher, compartilhe a planilha com permissão de visualização</li>
                       <li>Cole o link compartilhado no campo abaixo</li>
