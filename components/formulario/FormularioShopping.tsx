@@ -21,6 +21,7 @@ import { SecaoHorarios } from "./SecaoHorarios"
 import { SecaoEstacionamento } from "./SecaoEstacionamento"
 import { SecaoComercial } from "./SecaoComercial"
 import { SecaoMerchandising } from "./SecaoMerchandising"
+import { SecaoEventos } from "./SecaoEventos"
 import { SecaoEstabelecimentos } from "./SecaoEstabelecimentos"
 import { SecaoMateriais } from "./SecaoMateriais"
 import { Save, Send, FileText } from "lucide-react"
@@ -40,6 +41,11 @@ export function FormularioShopping() {
       telefonePrincipal: "",
       whatsapp: "",
       emailContato: "",
+      instagram: "",
+      facebook: "",
+      linkedin: "",
+      tiktok: "",
+      youtube: "",
       possuiCinema: false,
       nomeCinema: "",
       plataformaIngressos: "",
@@ -56,12 +62,10 @@ export function FormularioShopping() {
       emailComercial: "",
       infoMerchandising: "",
       emailMarketing: "",
+      tipoEventos: undefined,
+      observacoesEventos: "",
+      linkPlanilhaEstabelecimentos: "",
       observacoesEstabelecimentos: "",
-      instagram: "",
-      facebook: "",
-      linkedin: "",
-      tiktok: "",
-      youtube: "",
       informacoesAdicionais: "",
     },
   })
@@ -171,6 +175,7 @@ export function FormularioShopping() {
             <SecaoEstacionamento form={form} />
             <SecaoComercial form={form} />
             <SecaoMerchandising form={form} />
+            <SecaoEventos form={form} />
             <SecaoEstabelecimentos form={form} />
             <SecaoMateriais form={form} />
           </Accordion>

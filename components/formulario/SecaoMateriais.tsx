@@ -19,7 +19,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { ImageIcon, Share2 } from "lucide-react"
+import { ImageIcon } from "lucide-react"
 
 interface SecaoMateriaisProps {
   form: UseFormReturn<ShoppingFormData>
@@ -34,7 +34,7 @@ export function SecaoMateriais({ form }: SecaoMateriaisProps) {
             <ImageIcon className="h-5 w-5 text-primary" />
             <div className="text-left">
               <h3 className="font-semibold">10. Materiais Complementares</h3>
-              <p className="text-sm text-muted-foreground">Logos, fotos e redes sociais</p>
+              <p className="text-sm text-muted-foreground">Logos e fotos profissionais</p>
             </div>
           </div>
         </AccordionTrigger>
@@ -90,106 +90,6 @@ export function SecaoMateriais({ form }: SecaoMateriaisProps) {
                     Funcionalidade de upload será implementada com integração ao backend
                   </p>
                 </div>
-              </div>
-            </div>
-
-            <Separator />
-
-            {/* Redes Sociais */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <Share2 className="h-4 w-4 text-primary" />
-                <h4 className="text-sm font-medium">Redes Sociais</h4>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                <FormField
-                  control={form.control}
-                  name="instagram"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Instagram</FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="@shoppingcenter"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="facebook"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Facebook</FormLabel>
-                      <FormControl>
-                        <Input
-                          type="url"
-                          placeholder="https://facebook.com/shopping"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="linkedin"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>LinkedIn</FormLabel>
-                      <FormControl>
-                        <Input
-                          type="url"
-                          placeholder="https://linkedin.com/company/shopping"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="tiktok"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>TikTok</FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="@shoppingcenter"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="youtube"
-                  render={({ field }) => (
-                    <FormItem className="sm:col-span-2">
-                      <FormLabel>YouTube</FormLabel>
-                      <FormControl>
-                        <Input
-                          type="url"
-                          placeholder="https://youtube.com/@shopping"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
               </div>
             </div>
 
